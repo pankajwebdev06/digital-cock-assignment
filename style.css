@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    width: 80%;
+    background-color: rgb(21, 21, 81);
+    margin: 10rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px -1px 1px 3px rgb(178, 254, 254);
+}
+
+.container .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.container .brand{
+    font-size: 1rem;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding:1rem 1rem 0 0;
+    font-family: cursive;
+}
+
+.container .clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 5px rgba(155,255,255,1);
+}
+
+.container .clock #hour{
+    margin-right: 0.5rem;
+    font-size: 3rem;
+}
+
+.container .clock #dot1{
+    margin-right: 0.5rem;
+    font-size: 3rem;
+}
+
+.container .clock #minutes{
+    margin-right: 0.5rem;
+    font-size: 3rem;
+}
+
+.container .clock #dot2{
+    margin-right: 0.5rem;
+    font-size: 3rem;
+}
+.container .clock #seconds{
+    margin-right: 0.5rem;
+    font-size: 3rem;
+}
+.container .clock #ampm{
+    font-size: 2.3rem;
+    margin-left: 0.5rem;
+    background-color: rgb(53, 53, 198);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+}
+
+@media(max-width: 550px){
+    .container{
+        width: 94%;
+    }
+    .container .clock{
+        width: 98%;
+    }
+    .container .clock #ampm{
+        font-size: 2rem;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0.4rem;
+    }
+    .container .brand{
+        margin-top: 1.5rem;
+    }
+}
